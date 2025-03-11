@@ -1,0 +1,84 @@
+body {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/9737377e-a430-4d13-ad6c-874c54837c49/945eec79-6856-4d95-b4c6-83ff5292f33d/KR-ko-20220111-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.movie-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie-item {
+    width: 9%; /* 10개씩 한 줄에 배치 */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.poster-container {
+    position: relative;
+    display: inline-block;
+}
+
+.poster {
+    width: 215px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.poster-container:hover .poster {
+    opacity: 0.4;
+}
+
+.btn-reserve {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.poster-container:hover .btn-reserve {
+    opacity: 1;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.pagination-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    color: white;
+    background-color: #f44336;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+    background-color: red;
+}
+
+.pagination-btn:active {
+    background-color: darkred;
+}
+
+.movie-title {
+    white-space: nowrap; /* 한 줄로 유지 */
+    text-align: center;
+    font-size: 16px; /* 폰트 크기 설정 */
+}

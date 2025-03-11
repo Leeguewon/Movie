@@ -1,0 +1,57 @@
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 0px;
+         	background: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .summary {
+            float: right;
+            width: 30%;          
+            padding: 17px;
+            background-color: #333;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .summary h3 {
+            margin-top: 0;
+        }
+        .ticket-info {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .ticket-info img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 4px;
+        }
+        .ticket-details {
+            flex-grow: 1;
+        }
+        .ticket-details p {
+            margin: 5px 0;
+        }
+        .payment-button {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+        .payment-button button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .payment-button button:hover {
+            background-color: darkred;
+        }

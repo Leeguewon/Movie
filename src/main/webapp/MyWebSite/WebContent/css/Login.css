@@ -1,0 +1,99 @@
+/*@charset "UTF-8";/* Login.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* 배경을 흐리게 하고 요소들을 배치하기 위해 설정 */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/9737377e-a430-4d13-ad6c-874c54837c49/945eec79-6856-4d95-b4c6-83ff5292f33d/KR-ko-20220111-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(8px); /* 배경만 흐리게 처리 */
+    z-index: -1; /* 흐림 효과가 배경에만 적용되도록 설정 */
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: white; /* 로고 색상을 흰색으로 설정 */
+    text-decoration: none;
+    margin-bottom: 20px;
+    position: absolute; /* 로고를 배경 위에 고정 */
+    top: 10px;
+    left: 20px;
+}
+
+#logo:hover {
+    color: #e50914; /* 마우스를 올렸을 때 빨간색으로 변하게 설정 */
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 80px; /* 헤더를 배경 위에 고정 */
+    font-size: 36px;
+}
+
+table {
+    width: 30%;
+    height: auto; 
+    border-collapse: collapse; 
+    background-color: rgba(40, 40, 40, 0.8); /* 어두운 배경색을 설정 */
+    border-radius: 15px; /* 테이블에 둥근 모서리 추가 */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* 그림자 추가로 입체감 */
+    overflow: hidden; /* 테이블 안의 요소들이 모서리 안에서만 보이도록 */
+    z-index: 1; /* 테이블이 배경 위에 표시되도록 */
+    color: white; /* 글씨를 흰색으로 설정 */
+    margin-top: 50px; /* 테이블 간 간격 추가 */
+}
+
+td {
+    padding: 15px;
+    text-align: center; 
+    vertical-align: middle;
+    border: 1px solid #555; /* 테두리를 어두운 색으로 설정 */
+    font-size: 16px; /* 글자 크기를 조금 키워서 가독성을 높임 */
+}
+
+tr {
+    height: calc(500px / 7); 
+}
+
+tr:first-child {
+    background-color: #333; /* 첫 번째 행 배경을 어두운 색으로 변경 */
+    color: white;
+    text-align: center; 
+}
+
+form {
+    z-index: 2; /* form을 테이블 위에 표시 */
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50; /* 버튼 배경 색상 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #45a049; /* 버튼 호버 색상 */
+}

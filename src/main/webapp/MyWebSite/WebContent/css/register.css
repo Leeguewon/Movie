@@ -1,0 +1,107 @@
+body {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/9737377e-a430-4d13-ad6c-874c54837c49/945eec79-6856-4d95-b4c6-83ff5292f33d/KR-ko-20220111-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* 로고와 회원가입 폼 세로 정렬 */
+}
+
+/* 로고 스타일 */
+#logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: white; /* 로고 색상을 흰색으로 설정 */
+    text-decoration: none;
+    margin-bottom: 20px;
+    position: absolute; /* 로고를 배경 위에 고정 */
+    top: 10px;
+    left: 20px;
+}
+
+#logo:hover {
+    color: #e50914;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 80px; /* 헤더를 배경 위에 고정 */
+    font-size: 36px;
+}
+
+/* 테이블 스타일 */
+table {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.85); /* 흰색 배경에 85% 투명도 */
+    border-radius: 15px; /* 둥근 모서리 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* 그림자 효과 */
+    overflow: hidden;
+}
+
+tr:first-child {
+    background-color: white;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+td {
+    padding: 15px;
+    font-size: 14px;
+    color: BLACK;
+    border: none;
+}
+
+/* 입력 필드 스타일 */
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* 버튼 스타일 */
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #28a745; /* 녹색 */
+    transition: background-color 0.3s;
+}
+
+input[type="reset"] {
+    background-color: #2F4F4F; /* 회색 */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+input[type="reset"]:hover {
+    background-color: #c82333; /* 어두운 빨간색 */
+}
+
+/* 중앙 정렬 */
+td[colspan="2"] {
+    text-align: center;
+}
